@@ -1,12 +1,12 @@
 # Project: Multi User Blog
 Codes are taken from instructors note, github, websites.
 
-Documentation of my Project:
+## Documentation of my Project:
 
 This project is my first project in my Nanodegree where I have designed a blog.
 The two main technologies used in this project are Google App Engine and Jinja.
 
-Setup
+## Setup
 
 - Installed Python 2.7.
 - Install Google App Engine SDK.
