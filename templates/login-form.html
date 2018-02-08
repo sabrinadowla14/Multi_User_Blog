@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-    <h2> Login</h2>
-    <form method="post">
-      <div class="container">
+ 
+    <div class="container">
+	<h2 class="login-title"> Login</h2>
+	<form method="post">
     <label><b>Username</b></label>
-	<input type="text" name="username" value="{{username}}">
+	<input autofocus class="formName" placeholder="Username" type="text" name="username" value="{{username}}">
 
     <label><b>Password</b></label>
-   	<input type="password" name="password" value="">
+   	<input class="formName" placeholder="Password" type="password" name="password" value="">
 	
       <div class="error">
         {{error}}
@@ -19,6 +19,7 @@
 	  <input type="submit" class="btn btn-info" value="Login">
 	  <input type="submit" class="btn btn-info" value="Cancel" onclick="window.location='/blog'; return false;">
 	  </div>
+	 </form>
 	 </div>
-    </form>
+    
 {% endblock %}

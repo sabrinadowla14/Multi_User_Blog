@@ -2,17 +2,16 @@
 
 {% block content %}
 
-  
-    <h2>Signup</h2>
-    <form method="post">
-      <div class="container">
+    <div class="container">
+	  <h2 class="signup-title">Signup</h2>
+	   <form method="post">
 	   <label><b>Username</b></label>
-       <input type="text" name="username" value="{{username}}">
+       <input type="text" placeholder="Username" name="username" value="{{username}}">
 	<div class = "error">
       {{error_username}}
     </div>
 	    <label><b>Password</b></label>
-        <input type="password" name="password" value="">
+        <input type="password" placeholder="Password" name="password" value="">
 	<div class = "error">
       {{error_password}}
     </div>
@@ -31,7 +30,8 @@
 	  <input type="submit" class="btn btn-info" value="Submit">
 	  <input type="submit" class="btn btn-info" value="Cancel" onclick="window.location='/blog'; return false;">
 	  </div>
+	  </form>
    </div>
-    </form>
+    
   
 {% endblock %}

@@ -13,7 +13,8 @@ The two main technologies used in this project are Google App Engine and Jinja.
 - Signed Up for a Google App Engine Account.
 - Deployed my project with gcloud app deploy.
 - Viewed my project at https://multi-user-blog-162500.appspot.com/
-- When developing locally, I could use dev_appserver.py to run a copy of my app on my own computer,
+- When developing locally:
+- In the terminal type in: dev_appserver.py Multi_User_Blog(Name of the Folder),
 - and access it at http://localhost:8080/
 - Installed Jinja and created helper functions for using Jinja.
 

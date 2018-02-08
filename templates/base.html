@@ -12,6 +12,8 @@
 </head>
 
 <body>
+<div class="wrapper">
+   <nav class="navigation">
     <header class="headerInfo">
         <a href="/blog" class="main-title">
     Multi User Blog
@@ -20,28 +22,31 @@
     <div class="row">
         <div class="login-area">
             {% if user %}
-            <a class="newpost-link" href="/blog/newpost">New Post</a>
-            <br>
-            <br> {{user.name}} (<a class="login-link" href="/logout">logout</a>) {% else %}
+			<a class="newpost-link" href="/logout">logout</a> |
+			<a class="newpost-link" href="/blog/newpost">New Post</a> 
+            {% else %}
             <a class="login-link" href="/login">login</a> |
-            <a class="login-link" href="/signup">signup</a> {% endif %}
+            <a class="login-link" href="/signup">signup</a> 
+		    {% endif %}
         </div>
         <div id="content">
             {% block content %} {% endblock %}
         </div>
     </div>
+	</nav>
     <div class="row">
         <div class="horLine">
             <hr>
         </div>
     </div>
+	
     <footer id="footerPage">
-        <p>
-            &copy; {{user.name}} Project: Multi user blog Nano Degree, 2017.</p>
+        <p>&copy; {{user.name}} Project: Multi user blog Nano Degree, 2017.</p>
     </footer>
     <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
     <script src="/static/js/main.js"></script>
+</div>
 </body>
 
 </html>
