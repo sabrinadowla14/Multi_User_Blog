@@ -1,4 +1,5 @@
 # Project: Multi User Blog
+
 Codes are taken from instructors note, github, websites.
 
 ## Documentation of my Project:
@@ -51,6 +52,7 @@ While checking with pep8, I was not able to resolve the problem of "no newline a
 
 
 ## How to Run a project:
+
 Go to google App Engine Launcher.
 Go to file and add existing Application.
 
